@@ -14,7 +14,25 @@
             src="/images/products/<%= product.image %>"
             alt="product-image.jpg"
             />
+            
+
+            <div class="boxRibbon">
+            
+            <div class="ribbon">
+              <span> <%= product.discount %>% OFF </span>
+            </div>
           </div>
+            
+            
+            
+          </div>
+
+            
+
+
+
+
+
           <div class="large-product-detail">
             <div class="product-info-mobile">
               <p class="article-name"><%= product.name %></p>
@@ -22,6 +40,11 @@
                 <div class = "discount">
                   <p class="article-price-discount">Antes $<%= product.price %>                     
                   <p  class="article-discount-shipping"><%= parseInt(product.discount) %>% OFF</p>
+                
+                
+                  <div class="ribbon"  style= "display: inline "></div>
+                
+                
                 </div>
               <% } %> 
               <div class="article-price">

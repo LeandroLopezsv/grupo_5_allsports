@@ -22,6 +22,79 @@ body {
   box-shadow: 0 0 10px blueviolet;
 }
 
+
+
+/* nuevo
+--------------------- */
+
+
+.boxRibbon{
+  width: 300px;
+  height: 400px;
+  background-color: yellow;
+  position: relative;
+  
+}
+
+
+
+.ribbon {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  overflow: hidden;
+  animation: anim 1s forwards;
+}
+
+.ribbon.span {
+  width: 225;
+  height: -43;
+  position: absolute;
+  background-color: tomato;
+  transform: rotate (-45deg);
+  right: -20px;
+  top: 40px;
+  display: grid;
+  place-items: center;
+  color:rgb(201, 216, 255);
+  font-weight: 500;
+  letter-spacing: 1px;  
+  font-size: 1.1rem;
+}
+
+.ribbon::before, .ribbon::after{
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: darkgray;
+  position: absolute;
+  bottom: 0;
+  z-index: -2;
+}
+
+.ribbon::before{
+  top:0;  
+  right:0;
+  z-index: -2;
+} 
+
+@keyframes anim {
+  100%{
+    width: 150px;
+    height: 150px;
+      
+  }
+  
+}
+
+/* nuevo
+--------------------- */
+
+
+
+
 .product-information {
   display: flex;
   flex-direction: column;

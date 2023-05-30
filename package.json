@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JuanCruzSiryi/grupo_5_allsports.git"
+    "url": "git+https://github.com/LeandroLopezsv/grupo_5_allsports.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JuanCruzSiryi/grupo_5_allsports/issues"
+    "url": "https://github.com/LeandroLopezsv/grupo_5_allsports.git/issues"
   },
-  "homepage": "https://github.com/JuanCruzSiryi/grupo_5_allsports#readme",
+  "homepage": "https://github.com/LeandroLopezsv/grupo_5_allsports.git#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",

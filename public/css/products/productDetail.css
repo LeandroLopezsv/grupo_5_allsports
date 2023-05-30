@@ -7,6 +7,11 @@
 
 /* ---------------------Main------------- */
 
+main{
+  background: linear-gradient(to right, rgb(174, 189, 227), rgb(187, 159, 148));
+    
+}
+
 body {
   background: linear-gradient(to right, rgb(201, 216, 255), rgb(255, 250, 222));
 
@@ -85,7 +90,7 @@ body {
 }
 
 .product-detail-mobile {
-  border: solid 2px gainsboro;
+  /* border: solid 2px gainsboro; */
   border-radius: 5px;
   padding: 5px 5px;
   margin-bottom: 1em;
@@ -99,6 +104,90 @@ body {
   border-radius: 5px;
   margin-bottom: 1em;
 }
+
+/* nuevo
+--------------------- */
+
+
+.boxRibbon{
+  /* width: 300px;
+  height: 400px;
+  background-color: yellow;*/
+  position: relative; 
+  
+}
+
+
+
+.ribbon {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  /* overflow: hidden; */
+  animation: anim 1s forwards;
+}
+
+.ribbon span {
+  width: 155px;
+  height: 35px;
+  position: absolute;
+  background-color: tomato;
+  transform: rotate(-35deg);
+  right: 420px;
+  top: -175px;
+  display: grid;
+  place-items: center;
+  color:rgb(201, 216, 255);
+  font-weight: 500;
+  /* letter-spacing: 1px;*/  
+  font-size: 1.1rem; 
+  /* display: none; */
+}
+
+.ribbon::before, .ribbon::after{
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: darkgray;
+  position: absolute;
+  bottom: 0;
+  z-index: -2;
+}
+
+.ribbon::before{
+  top:0;  
+  right:0;
+  z-index: -2;
+} 
+
+@keyframes anim {
+  100%{
+    width: 150px;
+    height: 150px;
+      
+  }
+  
+}
+
+/* nuevo
+--------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .text-property {
   display: flex;
@@ -143,6 +232,8 @@ body {
 
 .large-product-detail {
   /* border: solid 2px red; */
+
+
   padding: 0 5em;
   width: 80%;
 }
